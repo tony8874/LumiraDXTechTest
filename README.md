@@ -19,9 +19,9 @@ Defect report(.xlsx file) embedded in the VS project.
 
 1. The POST API call permits duplicate categories to be added.
 
-```
-Test Breakdown:
 
+## Test Breakdown:
+```
 ### Test Name - AddCategoryRequest
   Test:
         1. Check valid status code response.
