@@ -22,16 +22,44 @@ Defect report(.xlsx file) embedded in the VS project.
 
 ## Test Breakdown:
 ```
-Test Name - AddCategoryRequest
-  Test:
-        1. Check valid status code response.
-        2. Check valid content-type Header response.
-        3. Check new category added.
-Test Name - CategoryBlogRequest
-  Test:
-        1. Check valid status sode response.
-        2. Check valid content-type Header response.
-        3. Check Response Body
-        4. Check JSON Schema
-        5. 
+Test Name - AddCategoryRequest (POST /blog/categories/)
+  Tests(3):
+        1. Verify status code response to valid request.
+        2. Verify content-type Header response to valid request.
+        3. Verify new category added with valid request.
+        
+Test Name - CategoryBlogRequest (GET /blog/categories/{id})
+  Tests(7):
+        1. Verify status code response with valid request.
+        2. Verify content-type Header response with valid request.
+        3. Verify Response Body with valid request.
+        4. Verify JSON Schema with valid request.
+        5. Verify status code response with invalid request.
+        6. Verify content-type Header response with invalid request.
+        7. Verify Response Body with valid request.
+        
+ Test Name - CategoryListRequest (GET /blog/categories/)
+   Tests(3):
+        1. Verify status code response with valid request.
+        2. Verify content-type Header response with valid request.
+        3. Verify JSON Schema with valid request.
+        
+ Test Name - DeleteCategoryRequest (DELETE /blog/categories/{id})
+   Tests(6):
+        1. Verify status code response with valid request.
+        2. Verify content-type Header response with valid request.
+        3. Verify Response Body with valid request.
+        4. Verify category deleted successfully with valid request.
+        5. Verify status code response with invalid request.
+        6. Verify Response Body with invalid request.
+        
+ Test Name - DeleteCategoryRequest (DELETE /blog/categories/{id})
+   Tests(7):
+        1. Verify status code response with valid request.
+        2. Verify content-type Header response with valid request.
+        3. Verify Response Body with valid request.
+        4. Verify Category updated successfully.
+        5. Verify status code response with valid request.
+        6. Verify content-type Header response with valid request.
+        7. Verify Response Body with valid request.  
 ```
