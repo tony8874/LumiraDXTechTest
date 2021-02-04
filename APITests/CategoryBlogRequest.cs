@@ -25,10 +25,10 @@ namespace APITests
             Assert.AreEqual(200, (int)APIValidResponse.StatusCode, "Status Code 200 Expected.");
 
             //Check response headers
-            Assert.AreEqual("application/json", APIValidResponse.ContentType);
+            Assert.AreEqual("application/json", APIValidResponse.ContentType, "Response content-type Header error");
 
             //Check response body
-            Assert.IsNotEmpty(APIValidResponse.Content);
+            Assert.IsNotEmpty(APIValidResponse.Content, "Response body is not empty");
 
             //Verify JSON Schema
             JSchema schema = JSchema.Parse(PayloadSchemas.GETCategoryPostSchema);
@@ -49,10 +49,10 @@ namespace APITests
             Assert.AreEqual(404, (int)APIValidResponse.StatusCode, "Status Code 404 Expected.");
 
             //check response headers
-            Assert.AreEqual("application/json", APIValidResponse.ContentType);
+            Assert.AreEqual("application/json", APIValidResponse.ContentType, "Response content-type Header error");
 
             //Check response body
-            Assert.IsNotEmpty(APIValidResponse.Content);
+            Assert.IsNotEmpty(APIValidResponse.Content, "Response body is not empty");
         }
     }
 }

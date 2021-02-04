@@ -25,10 +25,10 @@ namespace APITests
             Assert.AreEqual(204, (int)APIValidresponse.StatusCode, "Status Code 204 Expected.");
 
             //check response headers
-            Assert.AreEqual("application/json", APIValidresponse.ContentType);
+            Assert.AreEqual("application/json", APIValidresponse.ContentType, "Response content-type Header error");
 
             //Check response body
-            Assert.IsEmpty(APIValidresponse.Content);
+            Assert.IsEmpty(APIValidresponse.Content, "Response body is empty");
 
             //Check category no longer available
             var APIResponse = REST.GetCategoryList(Endpoint);
@@ -53,7 +53,7 @@ namespace APITests
             Assert.AreEqual(404, (int)APIInvalidresponse.StatusCode, "Status Code 404 Expected.");
 
             //Check response body
-            Assert.IsNotEmpty(APIInvalidresponse.Content);
+            Assert.IsNotEmpty(APIInvalidresponse.Content, "Response body is not empty");
         }
     }
 }

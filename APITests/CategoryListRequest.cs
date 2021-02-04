@@ -21,7 +21,7 @@ namespace APITests
             Assert.AreEqual(200, (int)APIResponse.StatusCode, "Status Code 200 Expected.");
 
             //checked valid response headers
-            Assert.AreEqual("application/json", APIResponse.ContentType);
+            Assert.AreEqual("application/json", APIResponse.ContentType, "Response content-type Header error");
 
             //Verify JSON Schema
             JSchema schema = JSchema.Parse(PayloadSchemas.GETCategorySchema);

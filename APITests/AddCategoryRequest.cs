@@ -20,16 +20,16 @@ namespace APITests
             var APIResponse = REST.AddNewCategory(Endpoint, JSONPayload);
 
             //Check stats code response
-            Assert.AreEqual(201, (int)APIResponse.StatusCode);
+            Assert.AreEqual(201, (int)APIResponse.StatusCode, "Status Code 201 Expected.");
 
             //checked REST response headers
-            Assert.AreEqual("application/json", APIResponse.ContentType);
+            Assert.AreEqual("application/json", APIResponse.ContentType, "Response content-type Header error");
 
             //Check new category added
             var ListResponse = REST.GetCategoryList(Endpoint);
             var CategoriesList = JsonConvert.DeserializeObject<List<ListOfCategories>>(ListResponse.Content);
             int LastEntry = CategoriesList.Count;
-            Assert.That(CategoriesList[LastEntry - 1].Name, Is.EqualTo("Engineering"), "Name attribute differs from expected");
+            Assert.That(CategoriesList[LastEntry - 1].Name, Is.EqualTo("Engineering"), "Name attribute value differs from expected");
         }
     }
 }

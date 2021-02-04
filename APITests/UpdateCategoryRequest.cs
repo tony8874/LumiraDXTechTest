@@ -20,13 +20,13 @@ namespace APITests
             var APIResponse = REST.UpdateEntry(Endpoint + Id, JSONPayload);
 
             //Check request response status code
-            Assert.AreEqual(204, (int)APIResponse.StatusCode);
+            Assert.AreEqual(204, (int)APIResponse.StatusCode, "Status Code 204 Expected.");
 
             //check response headers
-            Assert.AreEqual("application/json", APIResponse.ContentType);
+            Assert.AreEqual("application/json", APIResponse.ContentType, "Response content-type Header error");
 
             //Check response body
-            Assert.IsEmpty(APIResponse.Content);
+            Assert.IsEmpty(APIResponse.Content, "Response body is empty");
 
             //Check name attribute updated
             var ListResponse = REST.GetCategoryList(Endpoint);
@@ -43,10 +43,10 @@ namespace APITests
             var APIResponse = REST.UpdateEntry(Endpoint + Id, JSONPayload);
 
             //Check Invalid response status code
-            Assert.AreEqual(404, (int)APIResponse.StatusCode);
+            Assert.AreEqual(404, (int)APIResponse.StatusCode, "Status Code 404 Expected.");
 
             //check response headers
-            Assert.AreEqual("application/json", APIResponse.ContentType);
+            Assert.AreEqual("application/json", APIResponse.ContentType, "Response content-type Header error");
 
             //Check response body
             Assert.IsNotEmpty(APIResponse.Content);
