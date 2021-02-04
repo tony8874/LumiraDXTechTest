@@ -53,7 +53,7 @@ Test Name - CategoryBlogRequest (GET /blog/categories/{id})
         5. Verify status code response with invalid request.
         6. Verify Response Body with invalid request.
         
- Test Name - DeleteCategoryRequest (DELETE /blog/categories/{id})
+ Test Name - UpdateCategoryRequest (PUT /blog/categories/{id})
    Tests(7):
         1. Verify status code response with valid request.
         2. Verify content-type Header response with valid request.
