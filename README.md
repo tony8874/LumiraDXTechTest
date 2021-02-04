@@ -1,6 +1,6 @@
 # LumiraDXTechTest
 
-Prerequisites:
+## Prerequisites:
 
 1. Fresh install of 'rest_api_demo' https://github.com/amaccormack-lumira/rest_api_demo/archive/techtest1.1.zip.
 2. Follow Install instructions https://github.com/amaccormack-lumira/rest_api_demo/blob/master/README.md
@@ -10,13 +10,20 @@ Prerequisites:
 7. From MS Visual Studio, select 'Test Explorer' from the 'Test' drop down menu
 8. From the 'Test Explorer' window, select Run all tests.
 
-Defect Report:
+## Defect Report:
 
 Defect report(.xlsx file) embedded in the VS project.
 
 
-Observations:
+## Observations:
 
 1. The POST API call permits duplicate categories to be added.
 
+```
+Test Breakdown:
 
+Test Name - AddCategoryRequest
+  Tests1:
+        1. Check valid status code response
+        2. Check valid content-type Header response       
+```
