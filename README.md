@@ -4,9 +4,9 @@
 
 1. Fresh install of 'rest_api_demo' https://github.com/amaccormack-lumira/rest_api_demo/archive/techtest1.1.zip.
 2. Follow Install instructions https://github.com/amaccormack-lumira/rest_api_demo/blob/master/README.md
-4. Download API Automation test suite from link https://github.com/tony8874/LumiraDXTechTest.git
+4. Download and unzip API Automation test suite from link https://github.com/tony8874/LumiraDXTechTest.git
 5. Install MS Visual Studio Community 2019 edition.
-6. From MS Visual Studio, select MS Project 'LumiraDXTech.sln'.
+6. From MS Visual Studio, select MS Project 'LumiraDXTech.sln' downloaded in step 3.
 7. From MS Visual Studio, select 'Test Explorer' from the 'Test' drop down menu
 8. From the 'Test Explorer' window, select Run all tests.
 
