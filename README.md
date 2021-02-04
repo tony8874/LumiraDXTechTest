@@ -22,8 +22,16 @@ Defect report(.xlsx file) embedded in the VS project.
 ```
 Test Breakdown:
 
-Test Name - AddCategoryRequest
-  Tests1:
-        1. Check valid status code response
-        2. Check valid content-type Header response       
+### Test Name - AddCategoryRequest
+  Test:
+        1. Check valid status code response.
+        2. Check valid content-type Header response.
+        3. Check new category added.
+### Test Name - CategoryBlogRequest
+  Test:
+        1. Check valid status sode response.
+        2. Check valid content-type Header response.
+        3. Check Response Body
+        4. Check JSON Schema
+        5. 
 ```
