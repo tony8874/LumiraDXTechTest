@@ -59,7 +59,7 @@ Test Name - CategoryBlogRequest (GET /blog/categories/{id})
         2. Verify content-type Header response with valid request.
         3. Verify Response Body with valid request.
         4. Verify Category updated successfully.
-        5. Verify status code response with valid request.
-        6. Verify content-type Header response with valid request.
-        7. Verify Response Body with valid request.  
+        5. Verify status code response with invalid request.
+        6. Verify content-type Header response with invalid request.
+        7. Verify Response Body with invalid request.  
 ```
